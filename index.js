@@ -1,7 +1,7 @@
 var Jimp = require("jimp");
  
-// open a file called "lenna.png"
-Jimp.read("mypic.jpg").then(function (lenna) {
+
+Jimp.read("mypic.jpg").then(function (mypic) {
     
     for (w=0;w<lenna.bitmap.width;w++){
 
@@ -16,7 +16,7 @@ Jimp.read("mypic.jpg").then(function (lenna) {
 			}
 		}
 	}
-	return lenna
-}).then(function(lenna){
-	lenna.write("hi.jpg");
+	return mypic
+}).then(function(mypic){
+	mypic.write("hi.jpg");
 });
