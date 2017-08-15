@@ -8,7 +8,7 @@ Jimp.read("mypic.jpg").then(function (mypic) {
 		for (h=0;h<mypic.bitmap.height;h++){
 			console.log(w+h)
 			if (mypic.getPixelColor(w,h) > 3535973887){
-				console.log(lenna.getPixelColor(w,h))
+				console.log(mypic.getPixelColor(w,h))
 				mypic.setPixelColor(8913151,w,h)
 			}
 			else{
